@@ -1,36 +1,33 @@
-package collectionFrameWork.arrayList;
+package collectionFrameWork.linkedList;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Launch {
+public class LLDemo {
 
 	public static void main(String[] args) {
 
-//		ArrayList test = new ArrayList();
-//		test.add("test1");  
-//		test.add("test2");  
-//		System.out.println(test);
-//		
-//		System.out.println("========================================");
-//		
-//		ArrayList al = new ArrayList();
-//		al.add(1234);                     
-//		al.add(1234.56f);
-//		al.add("xyz");
-//		al.add('a');
-//		al.add(false);
-//		
-//		System.out.println(al);
-//		al.add(2,8000);
-//		System.out.println(al);
-//		
-//		al.addAll(test);
-//		System.out.println(al);
-//		
-//		al.addAll(0,test);
-//		System.out.println(al);
-//		System.out.println(al.get(2));
+		LinkedList test = new ArrayList();
+		test.add("test1");  
+		test.add("test2");  
+		System.out.println(test);
+		
+		System.out.println("========================================");
+		
+		LinkedList al = new ArrayList();
+		al.add(1234);                     
+		al.add(1234.56f);
+		al.add("xyz");
+		al.add('a');
+		al.add(false);
+		
+		System.out.println(al);
+		al.add(2,8000);
+		System.out.println(al);
+		
+		al.addAll(test);
+		System.out.println(al);
+		
+		al.addAll(0,test);
+		System.out.println(al);
+		System.out.println(al.get(2));
 
 //		 ===============================================================
 
