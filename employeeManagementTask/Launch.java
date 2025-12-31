@@ -1,7 +1,8 @@
-package collectionFrameWork;
-import java.util.*;
+package collectionFrameWork.employeeManagementTask;
 
-public class Task {
+import java.util.*;
+//Employee Management System
+public class Launch {         
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -40,6 +41,7 @@ public class Task {
 				
 				int i = 1;
 				while(true) {
+					
 					
 					System.out.println("Enter Book"+i+" Name");
 					i++;

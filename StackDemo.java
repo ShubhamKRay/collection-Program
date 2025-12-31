@@ -16,12 +16,12 @@ public class StackDemo {
 		
 		System.out.println(stack);
 		
-//		System.out.println(stack.pop()); // Remove
+		System.out.println(stack.pop()); // Remove
 		
-//		System.out.println(stack.peek()); // Top element
+		System.out.println(stack.peek()); // Top element ko provide karega bina remove kiye
 		
 		System.out.println(stack.search("maju"));
-		
+//		
 		System.out.println(stack);
 		
 		

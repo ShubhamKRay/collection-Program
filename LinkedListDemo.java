@@ -1,6 +1,7 @@
 package collectionFrameWork;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Vector;
 
 public class LinkedListDemo {
 
@@ -83,7 +84,7 @@ public class LinkedListDemo {
 		
 		
 		
-/*		
+		
 		
 	Vector x0 = new Vector(); // Non Generic
 		
@@ -106,7 +107,7 @@ public class LinkedListDemo {
 		
 		System.out.println(ll);
 		
-		*/
+		
 	}
 
 }

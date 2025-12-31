@@ -7,12 +7,12 @@ public class LLDemo {
 
 	public static void main(String[] args) {
 
-		LinkedList test = new ArrayList();
-		test.add("test1");  
-		test.add("test2");  
-		System.out.println(test);
-		
-		System.out.println("========================================");
+//		LinkedList test = new LinkedList();
+//		test.add("test1");  
+//		test.add("test2");  
+//		System.out.println(test);
+//		
+//		System.out.println("========================================");
 		
 //		LinkedList ll = new LinkedList();
 //		ll.add(1234);                     
@@ -34,26 +34,26 @@ public class LLDemo {
 
 //		 ===============================================================
 
-		LinkedList ll = new LinkedList();
-		
-		//->   iterator ke liye cursor hamara yaha par rahega check karega agar value hai to while loop true ho jaega 
-		
-		ll.add(1234);                     
-		ll.add(1234.56f);
-		ll.add("xyz");
-		ll.add('a');
-		ll.add(false);
-		
-		System.out.println(ll);
-		System.out.println(ll.get(3));
-		
-		System.out.println("=================for loop====================");
-		//for loop
-		for(int i=0; i<ll.size() ; i++) {
-			System.out.println(ll.get(i));
-		}
-		
-		System.out.println("=================forEach loop====================");
+//		LinkedList ll = new LinkedList();
+//		
+//		//->   iterator ke liye cursor hamara yaha par rahega check karega agar value hai to while loop true ho jaega 
+//		
+//		ll.add(1234);                     
+//		ll.add(1234.56f);
+//		ll.add("xyz");
+//		ll.add('a');
+//		ll.add(false);
+//		
+//		System.out.println(ll);
+//		System.out.println(ll.get(3));
+//		
+//		System.out.println("=================for loop====================");
+//		//for loop
+//		for(int i=0; i<ll.size() ; i++) {
+//			System.out.println(ll.get(i));
+//		}
+//		
+//		System.out.println("=================forEach loop====================");
 //		//forEach loop
 //		for(Object o : ll)
 //			System.out.println(o);
@@ -61,35 +61,37 @@ public class LLDemo {
 //		System.out.println("====================================");
 //		
 //		Iterator iterator = ll.iterator();
-//		while(iterator.hasNext()) {     // hasNext() check karega ki value hai ya nhi agar hoga tabhi condition true hoga
-//			System.out.println(iterator.next());    // next - next ko print karte jaenge
+//		while(iterator.hasNext()) {                  // hasNext() check karega ki value hai ya nhi agar hoga tabhi condition true hoga
+//			System.out.println(iterator.next());     // next - next ko print karte jaenge
 //		}
+                                                     //hasNext() → next element hai ya nahi (true/false)
 
+                                                     //next() → next element print karta hai
 		// ===========================================================
 
-//		LinkedList test = new LinkedList();
-//		test.add(false);
-//		test.add('a');
-//		test.add("test2");
-//
-//		System.out.println(test);
-//		
-//		LinkedList ll = new LinkedList();
-//
-//		ll.add(1234);
-//		ll.add(1234.56f);
-//		ll.add("xyz");
-//		ll.add('a');
-//		ll.add("xyz");
-//		ll.add(false);
-//		ll.add(123);
-//		System.out.println(ll);
-//		ll.remove("xyz");
-//		ll.remove(0);
-//		ll.removeAll(test);
-//		Integer i = 123;
-//		ll.remove(i);
-//		System.out.println(ll);
+		LinkedList test = new LinkedList();
+		test.add(false);
+		test.add('a');
+		test.add("test2");
+
+		System.out.println(test);
+		
+		LinkedList ll = new LinkedList();
+
+		ll.add(1234);
+		ll.add(1234.56f);
+		ll.add("xyz");
+		ll.add('a');
+		ll.add("xyz");
+		ll.add(false);
+		ll.add(123);
+		System.out.println(ll);
+		ll.remove("xyz");
+		ll.remove(0);
+		ll.removeAll(test);
+		Integer i = 123;
+		ll.remove(i);
+		System.out.println(ll);
 
 		// ================================================================
 
@@ -123,8 +125,18 @@ public class LLDemo {
 //		System.out.println(ll);
 //
 //		List<Object> sublist = ll.subList(1, 3);   // 1 se 3 ke beech me
-//		System.out.println(sublist);
-//		
+//	    System.out.println(sublist);
+ 
+	/*    subList() का return type List है
+
+          ये guarantee नहीं देता कि वो LinkedList ही return करेगा
+
+           ❌ इसलिए ये गलत हो सकता है:
+
+            LinkedList<Object> sublist = ll.subList(1,3); // ❌
+   */
+		
+		
 //		System.out.println(ll.isEmpty());
 //		System.out.println(ll.contains(90)); // check karega ki ye wali value hai ya nhi true or false return karega
 //		ll.set(2, 1000);

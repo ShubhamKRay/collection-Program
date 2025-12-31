@@ -19,12 +19,12 @@ public class DequeDemo {
 //		dq.removeLast();
 //		System.out.println(dq);
 		
-		dq.pollFirst();
-		dq.pollLast();
-		System.out.println(dq);
+//		dq.pollFirst();
+//		dq.pollLast();
+//		System.out.println(dq);
 		
-		System.out.println(dq.peekFirst());
-		System.out.println(dq.peekLast());
+//		System.out.println(dq.peekFirst());
+//		System.out.println(dq.peekLast());
 		
 		
 		
