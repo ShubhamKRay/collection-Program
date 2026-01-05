@@ -8,8 +8,11 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public int compareTo(Employee o) {
-        System.out.println(o);
-		return o.id - this.id;
+		System.out.println(o);
+		return o.id - this.id;   //12-11=>POS
+      //return this.id - o.id;  //------------> 11-12=>NEG                
+		                        //12-13=>NEG
+		                       //12-14=>NEG , 13-14=>NEG
 	}
 
 	public Employee(int id, int age, String name) {
@@ -41,6 +44,11 @@ public class Employee implements Comparable<Employee> {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", age=" + age + ", name=" + name + "]";
 	}
 
 }
