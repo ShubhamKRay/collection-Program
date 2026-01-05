@@ -13,8 +13,8 @@ public class Launch {
 
 		TreeSet<Employee> treeset = new TreeSet<Employee>();
 
-		treeset.add(e1); // By default Ascending Order Natural
-		treeset.add(e2);
+		treeset.add(e2); // By default Ascending Order Natural
+		treeset.add(e1);
 		treeset.add(e3);
 		treeset.add(e4);
 

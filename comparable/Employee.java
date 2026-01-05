@@ -5,12 +5,11 @@ public class Employee implements Comparable<Employee> {
 	private int id;
 	private int age;
 	private String name;
-	
-	
+
 	@Override
 	public int compareTo(Employee o) {
-		
-		return 1;
+        System.out.println(o);
+		return o.id - this.id;
 	}
 
 	public Employee(int id, int age, String name) {
@@ -20,8 +19,6 @@ public class Employee implements Comparable<Employee> {
 		this.name = name;
 	}
 
-	
-	
 	public int getId() {
 		return id;
 	}
